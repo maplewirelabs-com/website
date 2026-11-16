@@ -35,7 +35,7 @@
 <body>
 <main>
 <h1>Netlantern Privacy Policy</h1>
-<p class="date">Effective 13 November 2026</p>
+<p class="date">Effective 16 November 2026</p>
 
 <p class="short">The short version: Netlantern has no account, no advertising and no tracking. What the app measures stays on your iPhone. If you buy Netlantern Pro, the purchase is recorded without your name.</p>
 
@@ -53,7 +53,9 @@
 
 <h2>What stays on your iPhone</h2>
 <ul>
-  <li>Speed test results, signal and mobile data readings, room and place names you type, your own names for devices and the list of devices already seen on your network.</li>
+  <li>Speed test results, signal and mobile data readings, room and place names you type, your own names for devices, the list of devices already seen on your network, the dropout log and the result of the last connection check.</li>
+  <li>The report for your provider is made on your iPhone. It leaves only if you share it, to the place you pick in the share sheet.</li>
+  <li>Your iPhone's own Wi-Fi address (MAC), only if you add it to the signal shortcut. It is shown on screen and kept with your readings.</li>
   <li>Wi-Fi passwords you save for making QR codes. These are kept in the iPhone's Keychain.</li>
 </ul>
 <p>None of this leaves your iPhone. Deleting the app removes it.</p>
@@ -76,7 +78,8 @@
 <p>Some tools need to reach a public internet service to do their job. As with any internet connection, that service sees your public internet address and whatever you asked it to look up. No name, account or device identifier is sent.</p>
 <ul>
   <li><strong>Cloudflare</strong> (speed.cloudflare.com, cloudflare-dns.com, 1.1.1.1): speed tests, your public address and provider, connection checks and name lookups.</li>
-  <li><strong>Google</strong> (dns.google, www.gstatic.com): name lookups and connection checks.</li>
+  <li><strong>Google</strong> (dns.google, www.gstatic.com, 8.8.8.8): name lookups and connection checks.</li>
+  <li><strong>Quad9</strong> (9.9.9.9) and <strong>OpenDNS</strong> (208.67.222.222): only when you run DNS speed, which asks each for a few well-known names such as apple.com.</li>
   <li><strong>rdap.org</strong> and the official internet registries it forwards to: Whois records for an address or site you look up.</li>
   <li><strong>Team Cymru</strong>: its public address-to-network map tells traceroute who runs each hop. It is asked through the name lookup services above.</li>
   <li><strong>Apple</strong> (captive.apple.com): checks whether a Wi-Fi sign-in page is in the way.</li>
