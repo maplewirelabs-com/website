@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>11H · Eleventh House</title>
+<title>11H</title>
 <meta name="description" content="11H, a community for people who read the stars, by Maplewire Labs. Coming soon to the App Store.">
 <link rel="icon" href="icon.png">
 <link rel="apple-touch-icon" href="icon.png">
@@ -31,9 +31,11 @@
       radial-gradient(1px 1px at 6% 44%, #F2EBDC, transparent), radial-gradient(1px 1px at 42% 8%, #F2EBDC, transparent);
   }
   main { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 64px 24px 40px; position: relative; }
-  .icon { width: 132px; height: 132px; border-radius: 30px; box-shadow: 0 0 0 1px #8A7349, 0 18px 60px rgba(201,169,106,.18); }
-  h1 { margin: 28px 0 0; font-weight: 700; font-size: 76px; line-height: 1; letter-spacing: .06em; color: #E6CC8F; font-variant-numeric: lining-nums; }
-  .name { margin: 6px 0 0; font-size: 22px; letter-spacing: .32em; text-transform: uppercase; color: #C9A96A; }
+  /* The logo as in the app: the house ring with the 11th house lit, and 11H drawn as a doorway beside it,
+     the doorway 95% as tall as the ring. */
+  .lockup { margin: 0; display: flex; align-items: center; justify-content: center; gap: 22px; }
+  .lockup .mark { width: 140px; height: 140px; }
+  .lockup .door { height: 119.7px; width: 239.4px; }
   .lede { max-width: 560px; margin: 28px 0 0; font-style: italic; font-size: 27px; line-height: 1.4; color: #F2EBDC; }
   .soon { margin: 36px 0 0; display: inline-block; padding: 12px 26px; border: 1px solid #C9A96A; border-radius: 999px; font-size: 20px; letter-spacing: .14em; text-transform: uppercase; color: #E6CC8F; }
   .points { margin: 36px 0 0; padding: 0; list-style: none; color: #CFC6B4; font-size: 21px; }
@@ -43,14 +45,12 @@
   footer a:hover { text-decoration: underline; }
   .by { margin-top: 10px; }
   .soon { white-space: nowrap; }
-  @media (max-width: 480px) { h1 { font-size: 64px; } .lede { font-size: 24px; } .soon { font-size: 16px; letter-spacing: .08em; padding: 12px 20px; } }
+  @media (max-width: 480px) { .lockup { gap: 14px; } .lockup .mark { width: 104px; height: 104px; } .lockup .door { height: 88.9px; width: 177.8px; } .lede { font-size: 24px; } .soon { font-size: 16px; letter-spacing: .08em; padding: 12px 20px; } }
 </style>
 </head>
 <body>
 <main>
-  <img class="icon" src="icon.png" alt="11H app icon" width="132" height="132">
-  <h1>11H</h1>
-  <p class="name">Eleventh House</p>
+  <h1 class="lockup" aria-label="11H"><svg class="mark" viewBox="0 0 100 100" role="img" aria-label="11H logo"><line x1="72.000" y1="50.000" x2="90.000" y2="50.000" stroke="#C9A96A" stroke-width="5.0"/><line x1="69.053" y1="39.000" x2="84.641" y2="30.000" stroke="#C9A96A" stroke-width="5.0"/><line x1="61.000" y1="30.947" x2="70.000" y2="15.359" stroke="#C9A96A" stroke-width="5.0"/><line x1="50.000" y1="28.000" x2="50.000" y2="10.000" stroke="#C9A96A" stroke-width="5.0"/><line x1="39.000" y1="30.947" x2="30.000" y2="15.359" stroke="#C9A96A" stroke-width="5.0"/><line x1="30.947" y1="39.000" x2="15.359" y2="30.000" stroke="#C9A96A" stroke-width="5.0"/><line x1="28.000" y1="50.000" x2="10.000" y2="50.000" stroke="#C9A96A" stroke-width="5.0"/><line x1="30.947" y1="61.000" x2="15.359" y2="70.000" stroke="#C9A96A" stroke-width="5.0"/><line x1="39.000" y1="69.053" x2="30.000" y2="84.641" stroke="#C9A96A" stroke-width="5.0"/><line x1="50.000" y1="72.000" x2="50.000" y2="90.000" stroke="#C9A96A" stroke-width="5.0"/><line x1="61.000" y1="69.053" x2="70.000" y2="84.641" stroke="#C9A96A" stroke-width="5.0"/><line x1="69.053" y1="61.000" x2="84.641" y2="70.000" stroke="#C9A96A" stroke-width="5.0"/><circle cx="50" cy="50" r="40.0" stroke="#C9A96A" stroke-width="10.0" fill="none"/><circle cx="50" cy="50" r="22.0" stroke="#C9A96A" stroke-width="7.5" fill="none"/><path d="M 27.500 11.029 A 45.0 45.0 0 0 0 11.029 27.500 L 34.195 40.875 A 18.25 18.25 0 0 1 40.875 34.195 Z" fill="#E6CC8F"/></svg><svg class="door" viewBox="0 26 100 50" role="img" aria-label="11H"><line x1="3" y1="51" x2="97" y2="51" stroke="#E6CC8F" stroke-width="1.4"/><rect x="10" y="26" width="7" height="50" fill="#C9A96A"/><polygon points="11,26 5,33 5,36 11,31" fill="#C9A96A"/><rect x="7" y="73.4" width="13" height="2.6" fill="#C9A96A"/><rect x="26" y="26" width="7" height="50" fill="#C9A96A"/><polygon points="27,26 21,33 21,36 27,31" fill="#C9A96A"/><rect x="23" y="73.4" width="13" height="2.6" fill="#C9A96A"/><rect x="52" y="26" width="7" height="50" fill="#C9A96A"/><rect x="49" y="26" width="13" height="2.6" fill="#C9A96A"/><rect x="49" y="73.4" width="13" height="2.6" fill="#C9A96A"/><rect x="81" y="26" width="7" height="50" fill="#C9A96A"/><rect x="78" y="26" width="13" height="2.6" fill="#C9A96A"/><rect x="78" y="73.4" width="13" height="2.6" fill="#C9A96A"/><rect x="59" y="49.2" width="22" height="3.6" fill="#C9A96A"/><polygon points="70,31.5 71.82,36.68 77,38.5 71.82,40.32 70,45.5 68.18,40.32 63,38.5 68.18,36.68" fill="#E6CC8F"/></svg></h1>
   <p class="lede">A community for people who read the stars. Share your chart, find your people by Sun, Moon and Rising, talk and compare charts. Then go deeper with a birth chart drawn from the real sky and a narrated course in astrology.</p>
   <ul class="points">
     <li>Your birth details never leave your phone.</li>
