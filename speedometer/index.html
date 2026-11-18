@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Speedometer HUD: GPS Speed · Maplewire Labs</title>
+<meta name="description" content="Help and support for the Speedometer HUD: GPS Speed iPhone app.">
+<link rel="canonical" href="https://maplewirelabs.com/speedometer/">
+<link rel="icon" type="image/svg+xml" href="/logo.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Figtree:wght@400;500;600&display=swap">
+<style>
+:root{
+  --bg:#0B1120; --bg2:#111A2E; --card:#131D33; --line:#22304D;
+  --fg:#F3F6FC; --muted:#A7B3CC; --red:#E8553E; --copper:#F2A65A;
+  --display:"Sora",system-ui,-apple-system,sans-serif; --body:"Figtree",system-ui,-apple-system,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font:18px/1.65 var(--body);-webkit-font-smoothing:antialiased}
+a{color:var(--copper)}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px}
+.top{display:flex;align-items:center;justify-content:space-between;padding:22px 0;border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--fg);font:700 18px var(--display);letter-spacing:-.01em}
+.brand svg{width:32px;height:32px}
+.top nav a{color:var(--muted);text-decoration:none;font-weight:600;margin-left:20px;font-size:16px}
+.top nav a:hover,.top nav a[aria-current]{color:var(--fg)}
+.kicker{color:var(--copper);font:600 14px var(--display);letter-spacing:.12em;text-transform:uppercase;margin:48px 0 8px}
+h1{font:800 clamp(32px,6vw,46px)/1.08 var(--display);letter-spacing:-.03em;margin:0 0 12px}
+.updated{color:var(--muted);font-size:15px;margin:0 0 8px}
+.switch{display:inline-block;margin:6px 0 8px;padding:8px 16px;border:1.5px solid var(--line);border-radius:999px;color:var(--fg);text-decoration:none;font:600 15px var(--display)}
+.switch:hover{border-color:#34466B}
+h2{font:700 22px/1.25 var(--display);letter-spacing:-.01em;margin:36px 0 8px}
+p,li{color:#D5DCEA}
+ul{padding-left:22px}
+li{margin:6px 0}
+strong{color:var(--fg)}
+.box{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px 22px;margin:24px 0}
+.box p{margin:0}
+.lang{border-top:1px solid var(--line);margin-top:64px;padding-top:8px}
+.mail{font:700 20px var(--display);color:var(--fg);text-decoration:none;border-bottom:2px solid var(--red)}
+footer{color:var(--muted);font-size:15px;padding:30px 0 44px;margin-top:56px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between}
+footer .brand{font-size:15px}
+footer .brand svg{width:22px;height:22px}
+footer a{color:var(--muted)}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F2A65A"/><stop offset="1" stop-color="#E8553E"/>
+    </linearGradient>
+    <symbol id="leaf" viewBox="0 0 120 120">
+      <path fill="none" stroke="url(#g)" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" d="M60 8 L68 28 L80 22 L77 46 L95 34 L91 50 L108 52 L96 64 L102 70 L80 76 L82 86 L64 80 L64 104 L56 104 L56 80 L38 86 L40 76 L18 70 L24 64 L12 52 L29 50 L25 34 L43 46 L40 22 L52 28 Z"/>
+      <path fill="none" stroke="url(#g)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" d="M60 104 V40 M60 72 L80 58 L91 58 M60 72 L40 58 L29 58 M60 54 L72 44 M60 54 L48 44"/>
+      <g fill="#0B1120" stroke-width="3.5">
+        <circle cx="60" cy="40" r="5" stroke="#E8553E"/>
+        <circle cx="91" cy="58" r="4.2" stroke="#E8553E"/>
+        <circle cx="29" cy="58" r="4.2" stroke="#F2A65A"/>
+        <circle cx="72" cy="44" r="3.8" stroke="#E8553E"/>
+        <circle cx="48" cy="44" r="3.8" stroke="#F2A65A"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="/" aria-label="Maplewire Labs home"><svg viewBox="0 0 120 120" aria-hidden="true"><use href="#leaf"/></svg>Maplewire Labs</a>
+    <nav><a href="/speedometer/" aria-current="page">Speedometer</a><a href="/speedometer/privacy/">Privacy</a><a href="/speedometer/terms/">Terms</a></nav>
+  </header>
+  <main>
+    <p class="kicker">iPhone app</p>
+    <h1>Speedometer HUD: GPS Speed</h1>
+    <p>A clean, easy-to-read GPS speedometer with a HUD mode that reflects your speed on the windshield at night. No ads, no account and no tracking.</p>
+    <a class="switch" href="#fr" lang="fr">Français</a>
+
+    <h2>What it does</h2>
+    <ul>
+      <li>Big, bright GPS speed in km/h, mph or knots, upright or sideways</li>
+      <li>Trips with top speed, average, distance and time</li>
+      <li><strong>Speedometer Pro</strong> (one-time purchase): HUD windshield mode, speed alert and full trip history with spreadsheet export</li>
+      <li>In English and French</li>
+    </ul>
+
+    <h2>Help and questions</h2>
+    <p>Write to us any time. Please include your iPhone model and the app version from <strong>Settings › About</strong> in the app.</p>
+    <p><a class="mail" href="mailto:support@maplewirelabs.com">support@maplewirelabs.com</a></p>
+
+    <h2>Common questions</h2>
+    <p><strong>Why is the speed different from my car's?</strong> Car speedometers usually read a little high on purpose. GPS speed is often closer to your real speed, but it can be off for a moment in tunnels, between tall buildings or right after you start.</p>
+    <p><strong>How do I restore Pro on a new iPhone?</strong> Open Settings › About and tap <strong>Restore Purchases</strong>, signed in with the same Apple Account you bought it with.</p>
+    <p><strong>How do I use a code?</strong> Tap <strong>Redeem Code</strong> on the Pro screen or in Settings › About.</p>
+    <p><strong>How do I get a refund?</strong> Purchases are handled by Apple. Request a refund at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
+
+    <p><a href="/speedometer/privacy/">Privacy Policy</a> · <a href="/speedometer/terms/">Terms of Use</a></p>
+
+    <section id="fr" class="lang" lang="fr">
+      <p class="kicker">App iPhone</p>
+      <h2 style="font-size:30px;margin-top:0">Speedometer HUD: GPS Speed</h2>
+      <p>Un compteur de vitesse GPS clair et facile à lire, avec un mode HUD qui reflète votre vitesse dans le pare-brise la nuit. Sans pub, sans compte et sans pistage.</p>
+
+      <h2>Fonctions</h2>
+      <ul>
+        <li>Grande vitesse GPS bien lisible en km/h, mph ou nœuds, à la verticale ou à l'horizontale</li>
+        <li>Trajets avec vitesse maximale, moyenne, distance et durée</li>
+        <li><strong>Speedometer Pro</strong> (achat unique)&nbsp;: mode HUD pour le pare-brise, alerte de vitesse et historique complet des trajets avec exportation vers un tableur</li>
+        <li>En français et en anglais</li>
+      </ul>
+
+      <h2>Aide et questions</h2>
+      <p>Écrivez-nous en tout temps. Indiquez votre modèle d'iPhone et la version de l'app, affichée dans <strong>Réglages › À propos</strong>.</p>
+      <p><a class="mail" href="mailto:support@maplewirelabs.com">support@maplewirelabs.com</a></p>
+
+      <h2>Questions fréquentes</h2>
+      <p><strong>Pourquoi la vitesse diffère-t-elle de celle de ma voiture&nbsp;?</strong> Les compteurs des voitures affichent souvent un peu plus que la vitesse réelle, exprès. La vitesse GPS est souvent plus proche de la réalité, mais elle peut être imprécise un moment dans un tunnel, entre de grands immeubles ou juste après le départ.</p>
+      <p><strong>Comment récupérer Pro sur un nouvel iPhone&nbsp;?</strong> Ouvrez Réglages › À propos et touchez <strong>Restaurer les achats</strong>, avec le même compte Apple que lors de l'achat.</p>
+      <p><strong>Comment utiliser un code&nbsp;?</strong> Touchez <strong>Utiliser un code</strong> dans l'écran Pro ou dans Réglages › À propos.</p>
+      <p><strong>Comment obtenir un remboursement&nbsp;?</strong> Les achats sont gérés par Apple. Faites la demande sur <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
+
+      <p><a href="/speedometer/privacy/#fr">Politique de confidentialité</a> · <a href="/speedometer/terms/#fr">Conditions d'utilisation</a></p>
+    </section>
+  </main>
+  <footer>
+    <a class="brand" href="/"><svg viewBox="0 0 120 120" aria-hidden="true"><use href="#leaf"/></svg>Maplewire Labs</a>
+    <span>© 2026 Maplewire Labs · Ontario, Canada · <a href="mailto:support@maplewirelabs.com">support@maplewirelabs.com</a></span>
+  </footer>
+</div>
+</body>
+</html>
