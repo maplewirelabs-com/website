@@ -38,7 +38,7 @@ footer{color:var(--dim);font-size:14px;margin-top:20px}
 <header><img src="../../sightline/icon.png" alt=""><div><div class="t">Sightline</div><div class="s">Camera theodolite for iPhone · Maplewire Labs</div></div></header>
 <h1>Support</h1>
 <p>Need help with Sightline, or have an idea? Write to us and we'll get back to you.</p>
-<div class="card"><div class="big"><a href="mailto:support@maplewirelabs.com">support@maplewirelabs.com</a></div>
+<div class="card"><div class="big"><a href="#" data-u="support" data-d="maplewirelabs.com" data-t>support at maplewirelabs dot com</a></div>
 <p>Please include your iPhone model, iOS version and the Sightline version. You'll find them in Sightline under Tools, then About Sightline.</p></div>
 <h2>Common questions</h2>
 <p><strong>The compass reading looks wrong.</strong> Move away from metal and magnets (cars, railings, phone cases with magnets), then calibrate: Tools, then Calibrate compass and move the phone in a figure 8.</p>
@@ -48,4 +48,5 @@ footer{color:var(--dim);font-size:14px;margin-top:20px}
 <p><strong>Refunds</strong> are handled by Apple at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
 <nav><a href="../../sightline/">Sightline</a><a href="../../sightline/support/">Support</a><a href="../../sightline/privacy/">Privacy Policy</a><a href="../../sightline/terms/">Terms of Use</a></nav>
 <footer>© 2026 Maplewire Labs</footer>
-</main></body></html>
+</main><script>/* Builds the support address in the browser, so it never appears in the page source for bots to copy */document.querySelectorAll("[data-u]").forEach(function(e){var a=e.getAttribute("data-u")+"@"+e.getAttribute("data-d");if(e.hasAttribute("data-t"))e.textContent=a;if(e.tagName==="A"){var s=e.getAttribute("data-s");e.setAttribute("href","mailto:"+a+(s?"?subject="+s:""));}});</script>
+</body></html>

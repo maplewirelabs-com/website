@@ -180,7 +180,7 @@ footer .brand svg{width:22px;height:22px}
         <h2>Our first apps are on the way</h2>
         <p>They'll be on the App Store soon. In the meantime, questions are welcome.</p>
       </div>
-      <a class="mail" href="mailto:support@maplewirelabs.com">support@maplewirelabs.com</a>
+      <a class="mail" href="#" data-u="support" data-d="maplewirelabs.com" data-t>support at maplewirelabs dot com</a>
     </div>
   </section>
 </main>
@@ -191,5 +191,6 @@ footer .brand svg{width:22px;height:22px}
     <span>© 2026 Maplewire Labs · Ontario, Canada</span>
   </footer>
 </div>
+<script>/* Builds the support address in the browser, so it never appears in the page source for bots to copy */document.querySelectorAll("[data-u]").forEach(function(e){var a=e.getAttribute("data-u")+"@"+e.getAttribute("data-d");if(e.hasAttribute("data-t"))e.textContent=a;if(e.tagName==="A"){var s=e.getAttribute("data-s");e.setAttribute("href","mailto:"+a+(s?"?subject="+s:""));}});</script>
 </body>
 </html>

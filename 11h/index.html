@@ -58,8 +58,9 @@
   <span class="soon">Coming soon to the App Store</span>
 </main>
 <footer>
-  <a href="privacy.html">Privacy</a>·<a href="terms.html">Terms</a>·<a href="mailto:support@maplewirelabs.com">Support</a>
+  <a href="privacy.html">Privacy</a>·<a href="terms.html">Terms</a>·<a href="#" data-u="support" data-d="maplewirelabs.com">Support</a>
   <div class="by">An app by <a href="https://maplewirelabs.com">Maplewire Labs</a></div>
 </footer>
+<script>/* Builds the support address in the browser, so it never appears in the page source for bots to copy */document.querySelectorAll("[data-u]").forEach(function(e){var a=e.getAttribute("data-u")+"@"+e.getAttribute("data-d");if(e.hasAttribute("data-t"))e.textContent=a;if(e.tagName==="A"){var s=e.getAttribute("data-s");e.setAttribute("href","mailto:"+a+(s?"?subject="+s:""));}});</script>
 </body>
 </html>

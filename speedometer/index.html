@@ -87,7 +87,7 @@ footer a{color:var(--muted)}
 
     <h2>Help and questions</h2>
     <p>Write to us any time. Please include your iPhone model and the app version from <strong>Settings › About</strong> in the app.</p>
-    <p><a class="mail" href="mailto:support@maplewirelabs.com">support@maplewirelabs.com</a></p>
+    <p><a class="mail" href="#" data-u="support" data-d="maplewirelabs.com" data-t>support at maplewirelabs dot com</a></p>
 
     <h2>Common questions</h2>
     <p><strong>Why is the speed different from my car's?</strong> Car speedometers usually read a little high on purpose. GPS speed is often closer to your real speed, but it can be off for a moment in tunnels, between tall buildings or right after you start.</p>
@@ -112,7 +112,7 @@ footer a{color:var(--muted)}
 
       <h2>Aide et questions</h2>
       <p>Écrivez-nous en tout temps. Indiquez votre modèle d'iPhone et la version de l'app, affichée dans <strong>Réglages › À propos</strong>.</p>
-      <p><a class="mail" href="mailto:support@maplewirelabs.com">support@maplewirelabs.com</a></p>
+      <p><a class="mail" href="#" data-u="support" data-d="maplewirelabs.com" data-t>support at maplewirelabs dot com</a></p>
 
       <h2>Questions fréquentes</h2>
       <p><strong>Pourquoi la vitesse diffère-t-elle de celle de ma voiture&nbsp;?</strong> Les compteurs des voitures affichent souvent un peu plus que la vitesse réelle, exprès. La vitesse GPS est souvent plus proche de la réalité, mais elle peut être imprécise un moment dans un tunnel, entre de grands immeubles ou juste après le départ.</p>
@@ -125,8 +125,9 @@ footer a{color:var(--muted)}
   </main>
   <footer>
     <a class="brand" href="/"><svg viewBox="0 0 120 120" aria-hidden="true"><use href="#leaf"/></svg>Maplewire Labs</a>
-    <span>© 2026 Maplewire Labs · Ontario, Canada · <a href="mailto:support@maplewirelabs.com">support@maplewirelabs.com</a></span>
+    <span>© 2026 Maplewire Labs · Ontario, Canada · <a href="#" data-u="support" data-d="maplewirelabs.com" data-t>support at maplewirelabs dot com</a></span>
   </footer>
 </div>
+<script>/* Builds the support address in the browser, so it never appears in the page source for bots to copy */document.querySelectorAll("[data-u]").forEach(function(e){var a=e.getAttribute("data-u")+"@"+e.getAttribute("data-d");if(e.hasAttribute("data-t"))e.textContent=a;if(e.tagName==="A"){var s=e.getAttribute("data-s");e.setAttribute("href","mailto:"+a+(s?"?subject="+s:""));}});</script>
 </body>
 </html>
