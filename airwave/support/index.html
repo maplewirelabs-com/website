@@ -32,7 +32,7 @@
 <p class="muted">Maplewire Labs</p>
 
 <p>Questions, a station that won't play, a station in the wrong place, or an idea? Email us and we'll get back to you:</p>
-<p><a href="mailto:support@maplewirelabs.com?subject=Airwave%20Atlas">support@maplewirelabs.com</a></p>
+<p><a href="#" data-u="support" data-d="maplewirelabs.com" data-s="Airwave%20Atlas" data-t>support at maplewirelabs dot com</a></p>
 
 <h2>A station doesn't play</h2>
 <p>Stations sometimes go off the air or change their stream address. Try another station, or tell us which one it is. You can also hide a station from the player's Hide button.</p>
@@ -47,5 +47,6 @@
 <p>Read our <a href="privacy.html">privacy policy</a>.</p>
 <p class="muted" style="margin-top:2.5rem"><a href="/">Maplewire Labs</a> · <a href="/airwave/privacy/">Privacy Policy</a> · <a href="/airwave/support/">Support</a></p>
 </main>
+<script>/* Builds the support address in the browser, so it never appears in the page source for bots to copy */document.querySelectorAll("[data-u]").forEach(function(e){var a=e.getAttribute("data-u")+"@"+e.getAttribute("data-d");if(e.hasAttribute("data-t"))e.textContent=a;if(e.tagName==="A"){var s=e.getAttribute("data-s");e.setAttribute("href","mailto:"+a+(s?"?subject="+s:""));}});</script>
 </body>
 </html>

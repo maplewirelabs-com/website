@@ -58,8 +58,9 @@
 <p>If this policy changes, we'll update this page and the date above.</p>
 
 <h2>Contact</h2>
-<p>Questions: <a href="mailto:support@maplewirelabs.com">support@maplewirelabs.com</a></p>
+<p>Questions: <a href="#" data-u="support" data-d="maplewirelabs.com" data-t>support at maplewirelabs dot com</a></p>
 <p class="muted" style="margin-top:2.5rem"><a href="/">Maplewire Labs</a> · <a href="/airwave/privacy/">Privacy Policy</a> · <a href="/airwave/support/">Support</a></p>
 </main>
+<script>/* Builds the support address in the browser, so it never appears in the page source for bots to copy */document.querySelectorAll("[data-u]").forEach(function(e){var a=e.getAttribute("data-u")+"@"+e.getAttribute("data-d");if(e.hasAttribute("data-t"))e.textContent=a;if(e.tagName==="A"){var s=e.getAttribute("data-s");e.setAttribute("href","mailto:"+a+(s?"?subject="+s:""));}});</script>
 </body>
 </html>

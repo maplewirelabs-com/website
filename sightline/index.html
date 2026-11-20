@@ -40,7 +40,8 @@ footer{color:var(--dim);font-size:14px;margin-top:20px}
 <p>Sightline turns your iPhone camera into a theodolite. Put the crosshair on anything and read its compass direction (azimuth) and its angle above or below the horizon (elevation).</p>
 <ul><li>Live azimuth and elevation, true or magnetic north</li><li>Photos and videos stamped with direction, angle, time and location</li><li>Bubble level</li><li>Sightline Pro: Auto Level Shot, angle grid, angles between two points, heights, reading log with CSV export, video timer</li></ul>
 <p>No account, no ads, no tracking. Everything stays on your iPhone.</p>
-<div class="card">Questions? <a href="support/">Visit Support</a> or write to <a href="mailto:support@maplewirelabs.com">support@maplewirelabs.com</a>.</div>
+<div class="card">Questions? <a href="support/">Visit Support</a> or write to <a href="#" data-u="support" data-d="maplewirelabs.com" data-t>support at maplewirelabs dot com</a>.</div>
 <nav><a href="../sightline/">Sightline</a><a href="../sightline/support/">Support</a><a href="../sightline/privacy/">Privacy Policy</a><a href="../sightline/terms/">Terms of Use</a></nav>
 <footer>© 2026 Maplewire Labs</footer>
-</main></body></html>
+</main><script>/* Builds the support address in the browser, so it never appears in the page source for bots to copy */document.querySelectorAll("[data-u]").forEach(function(e){var a=e.getAttribute("data-u")+"@"+e.getAttribute("data-d");if(e.hasAttribute("data-t"))e.textContent=a;if(e.tagName==="A"){var s=e.getAttribute("data-s");e.setAttribute("href","mailto:"+a+(s?"?subject="+s:""));}});</script>
+</body></html>

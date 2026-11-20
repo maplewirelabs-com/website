@@ -112,7 +112,7 @@ footer a{color:var(--muted)}
     <p>If this policy changes, we will update this page and the date at the top.</p>
 
     <h2>Contact</h2>
-    <p><a href="mailto:support@maplewirelabs.com">support@maplewirelabs.com</a><br>Maplewire Labs, PO Box 383, Morrisburg, ON K0C 1X0, Canada</p>
+    <p><a href="#" data-u="support" data-d="maplewirelabs.com" data-t>support at maplewirelabs dot com</a><br>Maplewire Labs, PO Box 383, Morrisburg, ON K0C 1X0, Canada</p>
 
     <section id="fr" class="lang" lang="fr">
       <p class="kicker">Speedometer HUD: GPS Speed</p>
@@ -154,13 +154,14 @@ footer a{color:var(--muted)}
       <p>Si cette politique change, nous mettrons à jour cette page et la date en haut.</p>
 
       <h2>Pour nous joindre</h2>
-      <p><a href="mailto:support@maplewirelabs.com">support@maplewirelabs.com</a><br>Maplewire Labs, PO Box 383, Morrisburg, ON K0C 1X0, Canada</p>
+      <p><a href="#" data-u="support" data-d="maplewirelabs.com" data-t>support at maplewirelabs dot com</a><br>Maplewire Labs, PO Box 383, Morrisburg, ON K0C 1X0, Canada</p>
     </section>
   </main>
   <footer>
     <a class="brand" href="/"><svg viewBox="0 0 120 120" aria-hidden="true"><use href="#leaf"/></svg>Maplewire Labs</a>
-    <span>© 2026 Maplewire Labs · Ontario, Canada · <a href="mailto:support@maplewirelabs.com">support@maplewirelabs.com</a></span>
+    <span>© 2026 Maplewire Labs · Ontario, Canada · <a href="#" data-u="support" data-d="maplewirelabs.com" data-t>support at maplewirelabs dot com</a></span>
   </footer>
 </div>
+<script>/* Builds the support address in the browser, so it never appears in the page source for bots to copy */document.querySelectorAll("[data-u]").forEach(function(e){var a=e.getAttribute("data-u")+"@"+e.getAttribute("data-d");if(e.hasAttribute("data-t"))e.textContent=a;if(e.tagName==="A"){var s=e.getAttribute("data-s");e.setAttribute("href","mailto:"+a+(s?"?subject="+s:""));}});</script>
 </body>
 </html>

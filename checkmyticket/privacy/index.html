@@ -81,7 +81,7 @@ footer .wrap{padding-block:20px 36px}
     <strong>The short version</strong>
     <p>Check My Ticket has no accounts, no ads and no tracking. When you scan a ticket (and you've allowed it), the photo is sent to our AI reader, read and not stored. Your tickets and history stay on your iPhone. If the app runs into an error, a short technical report with no personal details is sent so it can be fixed. We don't sell or share your information.</p>
   </div>
-  <p>This policy explains what the Check My Ticket app (“the app”, shown on the App Store as Check My Ticket: Lottery) does with information. “We” means the makers of Check My Ticket. You can reach us at support@maplewirelabs.com.</p>
+  <p>This policy explains what the Check My Ticket app (“the app”, shown on the App Store as Check My Ticket: Lottery) does with information. “We” means the makers of Check My Ticket. You can reach us at <span data-u="support" data-d="maplewirelabs.com" data-t>support at maplewirelabs dot com</span>.</p>
 
   <h3>Ticket photos</h3>
   <p>When you scan a ticket or choose a photo, the app first checks on your iPhone, using Apple's on-device text recognition, that the photo shows a Powerball or Mega Millions ticket. Photos that don't are turned away and never leave your iPhone.</p>
@@ -95,7 +95,7 @@ footer .wrap{padding-block:20px 36px}
 
   <h3>Ticket samples (optional)</h3>
   <p>To teach the app to read tickets from every state, the app may ask once whether you'd like to share photos of the tickets you check. Only if you choose <em>Share</em> and only while we still need tickets of that game from your state, the app sends us a reduced copy of the ticket photo, the numbers as you confirmed them and the text the phone read. No name, account, location or device identifier is sent. You can turn this off at any time in More › Ticket reading › Help improve the app.</p>
-  <p>Samples are stored privately in our Cloudflare account, seen only by us, used only to improve ticket reading and deleted automatically after 180 days. A ticket photo can show the ticket's barcode, so we never share samples with anyone. To have a sample deleted sooner, email <a href="mailto:support@maplewirelabs.com">support@maplewirelabs.com</a>.</p>
+  <p>Samples are stored privately in our Cloudflare account, seen only by us, used only to improve ticket reading and deleted automatically after 180 days. A ticket photo can show the ticket's barcode, so we never share samples with anyone. To have a sample deleted sooner, email <a href="#" data-u="support" data-d="maplewirelabs.com" data-t>support at maplewirelabs dot com</a>.</p>
 
   <h3>Error reports</h3>
   <p>If the app runs into an error, it sends a short technical report to our service (hosted by Cloudflare), so the problem can be found and fixed. The report holds the error message, the part of the app where it happened and the app and iOS versions. It contains no photos, ticket numbers, user ID, name, location or device identifier. Error reports are kept for 30 days and then deleted automatically.</p>
@@ -123,9 +123,10 @@ footer .wrap{padding-block:20px 36px}
   <p>The app is meant for adults who are old enough to play the lottery where they live (18 or older in most states). It isn't directed at children.</p>
 
   <h3>Changes and contact</h3>
-  <p>If this policy changes, we'll update the date above. For questions, email <a href="mailto:support@maplewirelabs.com">support@maplewirelabs.com</a>.</p>
+  <p>If this policy changes, we'll update the date above. For questions, email <a href="#" data-u="support" data-d="maplewirelabs.com" data-t>support at maplewirelabs dot com</a>.</p>
 </section>
 </div></main>
-<footer><div class="wrap">Check My Ticket · support@maplewirelabs.com · <a class="home" href="/">Maplewire Labs</a></div></footer>
+<footer><div class="wrap">Check My Ticket · <span data-u="support" data-d="maplewirelabs.com" data-t>support at maplewirelabs dot com</span> · <a class="home" href="/">Maplewire Labs</a></div></footer>
+<script>/* Builds the support address in the browser, so it never appears in the page source for bots to copy */document.querySelectorAll("[data-u]").forEach(function(e){var a=e.getAttribute("data-u")+"@"+e.getAttribute("data-d");if(e.hasAttribute("data-t"))e.textContent=a;if(e.tagName==="A"){var s=e.getAttribute("data-s");e.setAttribute("href","mailto:"+a+(s?"?subject="+s:""));}});</script>
 </body>
 </html>

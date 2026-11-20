@@ -56,8 +56,9 @@ footer{color:var(--dim);font-size:14px;margin-top:20px}
 <p>If these terms change, we will update them here and change the date at the top.</p>
 
 <h2>Contact</h2>
-<p>Questions? Write to <a href="mailto:support@maplewirelabs.com">support@maplewirelabs.com</a>.</p>
+<p>Questions? Write to <a href="#" data-u="support" data-d="maplewirelabs.com" data-t>support at maplewirelabs dot com</a>.</p>
 
 <nav><a href="../../sightline/">Sightline</a><a href="../../sightline/support/">Support</a><a href="../../sightline/privacy/">Privacy Policy</a><a href="../../sightline/terms/">Terms of Use</a></nav>
 <footer>© 2026 Maplewire Labs</footer>
-</main></body></html>
+</main><script>/* Builds the support address in the browser, so it never appears in the page source for bots to copy */document.querySelectorAll("[data-u]").forEach(function(e){var a=e.getAttribute("data-u")+"@"+e.getAttribute("data-d");if(e.hasAttribute("data-t"))e.textContent=a;if(e.tagName==="A"){var s=e.getAttribute("data-s");e.setAttribute("href","mailto:"+a+(s?"?subject="+s:""));}});</script>
+</body></html>
