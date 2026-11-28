@@ -61,7 +61,7 @@ h1 em{font-style:normal;color:var(--red)}
 section{padding:84px 0}
 .kicker{color:var(--copper);font:600 14px var(--display);letter-spacing:.12em;text-transform:uppercase;margin:0 0 10px}
 h2{font:800 clamp(28px,4vw,40px)/1.1 var(--display);letter-spacing:-.025em;margin:0 0 36px}
-.apps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.apps{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
 .app{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:24px;display:flex;flex-direction:column;transition:border-color .2s,transform .2s}
 .app:hover{border-color:#34466B;transform:translateY(-3px)}
 .app img{width:72px;height:72px;border-radius:17px;box-shadow:0 8px 24px rgba(0,0,0,.35)}
@@ -119,7 +119,7 @@ footer .brand svg{width:22px;height:22px}
         <svg viewBox="0 0 120 120" aria-hidden="true"><use href="#leaf"/></svg>
         Maplewire Labs
       </a>
-      <nav><a href="#contact">Contact</a></nav>
+      <nav><a href="#apps">Apps</a><a href="#contact">Contact</a></nav>
     </div>
 
     <div class="hero-in">
@@ -128,7 +128,8 @@ footer .brand svg{width:22px;height:22px}
         <h1>Smart apps,<br><em>wired</em> with care.</h1>
         <p class="lead">We design iPhone apps that feel easy from the first tap. Thoughtful features, clear screens and a little polish in every detail.</p>
         <div class="btns">
-          <a class="btn primary" href="#contact">Get in touch</a>
+          <a class="btn primary" href="#apps">See our apps</a>
+          <a class="btn ghost" href="#contact">Get in touch</a>
         </div>
       </div>
       <div class="mark">
@@ -171,14 +172,35 @@ footer .brand svg{width:22px;height:22px}
 </header>
 
 <main>
+  <section id="apps">
+    <div class="wrap">
+      <p class="kicker">Our apps</p>
+      <h2>On the App Store</h2>
+      <div class="apps">
+        <article class="app">
+          <img src="/img/speedometer.png" alt="Speedometer HUD: GPS Speed app icon" width="72" height="72">
+          <h3>Speedometer HUD</h3>
+          <p>Big, bright GPS speed in km/h, mph or knots. HUD mode reflects your speed on the windshield at night, and trips show your top speed, average and distance.</p>
+          <div class="links"><a href="https://apps.apple.com/app/id6836221338">App Store</a><a href="/speedometer/">Support</a><a href="/speedometer/privacy/">Privacy</a><a href="/speedometer/terms/">Terms</a></div>
+        </article>
+        <article class="app">
+          <img src="/img/easytune.png" alt="Easy Tune: Guitar Tuner app icon" width="72" height="72">
+          <h3>Easy Tune</h3>
+          <p>A guitar, bass and ukulele tuner with a friendly step-by-step guide for beginners and a built-in metronome.</p>
+          <div class="links"><a href="https://apps.apple.com/app/id6833046425">App Store</a><a href="/easytune/privacy/">Privacy</a><a href="/easytune/terms/">Terms</a></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
 
 
   <section id="contact" class="contact">
     <div class="wrap contact-in">
       <div>
-        <p class="kicker">Coming soon</p>
-        <h2>Our first apps are on the way</h2>
-        <p>They'll be on the App Store soon. In the meantime, questions are welcome.</p>
+        <p class="kicker">Contact</p>
+        <h2>Questions or ideas?</h2>
+        <p>Email us about any of our apps. We read every message.</p>
       </div>
       <a class="mail" href="#" data-u="support" data-d="maplewirelabs.com" data-t>support at maplewirelabs dot com</a>
     </div>
